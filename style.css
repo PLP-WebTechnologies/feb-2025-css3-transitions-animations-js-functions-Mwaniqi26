@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background: #f4f4f4;
+    padding: 2em;
+  }
+  
+  .mood-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .mood {
+    font-size: 4rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .mood.animate {
+    animation: pulse 1s ease;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+  }
+  
